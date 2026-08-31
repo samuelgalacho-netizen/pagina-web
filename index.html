@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -63,6 +64,7 @@
             border: 0;
             border-radius: 20px;
             cursor: pointer;
+            font-size: 16px;
         }
 
         .botao-curtir {
@@ -137,9 +139,15 @@
                 Por isso, a vida é tão preciosa.
             </p>
 
-            <button class="botao-curtir">👍 0</button>
-            <button class="botao-nao-curtir">👎 0</button>
+            <button class="botao-curtir" onclick="curtir(this)">
+                👍 <span>0</span>
+            </button>
+
+            <button class="botao-nao-curtir" onclick="naoCurtir(this)">
+                👎 <span>0</span>
+            </button>
         </article>
+
 
         <article class="fred">
             <h1>Fases da Vida</h1>
@@ -160,7 +168,16 @@
                 É o fechamento de um ciclo, deixando lembranças e experiências.
             </p>
 
-            
+            <button class="botao-curtir" onclick="curtir(this)">
+                👍 <span>0</span>
+            </button>
+
+            <button class="botao-nao-curtir" onclick="naoCurtir(this)">
+                👎 <span>0</span>
+            </button>
+        </article>
+
+
         <article class="vida">
             <h1>As Fases da Vida</h1>
 
@@ -183,10 +200,10 @@
                     <h3>Adulto</h3>
                 </div>
 
-               <div class="foto">
-    <img src="https://images.pexels.com/photos/16154799/pexels-photo-16154799.jpeg?auto=compress&cs=tinysrgb&w=500">
-    <h3>Velhice</h3>
-</div>
+                <div class="foto">
+                    <img src="https://images.pexels.com/photos/16154799/pexels-photo-16154799.jpeg?auto=compress&cs=tinysrgb&w=500">
+                    <h3>Velhice</h3>
+                </div>
 
                 <div class="foto">
                     <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=500&q=80">
@@ -195,6 +212,7 @@
 
             </div>
         </article>
+
 
         <article class="vida">
             <h1>Vídeo sobre a Vida</h1>
@@ -218,6 +236,19 @@
     <footer>
         <p>© 2026 - Diário de uma Vida | Samuel Carvalho Galacho</p>
     </footer>
+
+
+    <script>
+        function curtir(botao) {
+            let numero = botao.querySelector("span");
+            numero.textContent = Number(numero.textContent) + 1;
+        }
+
+        function naoCurtir(botao) {
+            let numero = botao.querySelector("span");
+            numero.textContent = Number(numero.textContent) + 1;
+        }
+    </script>
 
 </body>
 
