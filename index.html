@@ -1,197 +1,416 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diário de uma Vida</title>
-    <link rel="stylesheet" href="style.css">
+
+```
+<title>Diário de uma Vida</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #dbeafe, #fce7f3);
+        color: #333;
+        text-align: center;
+    }
+
+    /* CABEÇALHO */
+    header {
+        background: linear-gradient(135deg, #2563eb, #7c3aed);
+        color: white;
+        padding: 40px 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    /* CONTEÚDO */
+    main {
+        width: 90%;
+        max-width: 1100px;
+        margin: 30px auto;
+    }
+
+    /* CARTÕES */
+    .fred,
+    .vida {
+        background: white;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .fred h1,
+    .vida h1 {
+        color: #4f46e5;
+        margin-bottom: 15px;
+    }
+
+    .fred h3 {
+        color: #7c3aed;
+        margin: 20px 0 10px;
+    }
+
+    .fred p,
+    .vida p {
+        line-height: 1.7;
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    /* BOTÕES */
+    button {
+        border: none;
+        padding: 12px 20px;
+        margin: 10px 5px;
+        border-radius: 25px;
+        font-size: 17px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .botao-curtir {
+        background: #22c55e;
+        color: white;
+    }
+
+    .botao-nao-curtir {
+        background: #ef4444;
+        color: white;
+    }
+
+    button:hover {
+        transform: scale(1.08);
+        opacity: 0.9;
+    }
+
+    /* GALERIA */
+    .galeria {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .foto {
+        width: 300px;
+        background: #f8fafc;
+        padding: 15px;
+        border-radius: 18px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transition: 0.3s;
+    }
+
+    .foto:hover {
+        transform: translateY(-8px);
+    }
+
+    .foto img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .foto h3 {
+        color: #2563eb;
+        margin: 12px 0 8px;
+    }
+
+    /* VÍDEO */
+    .video-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* RODAPÉ */
+    footer {
+        background: #1e1b4b;
+        color: white;
+        padding: 25px;
+        margin-top: 40px;
+    }
+
+    /* CELULAR */
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 30px;
+        }
+
+        .fred,
+        .vida {
+            padding: 20px;
+        }
+
+        .foto {
+            width: 100%;
+        }
+    }
+</style>
+```
+
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <h1>Diário de uma Vida</h1>
-        <p>Irei falar sobre a vida, início, meio e fim.</p>
-    </header>
+```
+<!-- CABEÇALHO -->
+<header>
+    <h1>Diário de uma Vida</h1>
+    <p>Irei falar sobre a vida, início, meio e fim.</p>
+</header>
 
-    <main>
+<main>
 
-        <!-- Sobre a vida -->
-        <article class="fred">
+    <!-- SOBRE A VIDA -->
+    <article class="fred">
 
-            <h1>Por: Samuel Carvalho Galacho</h1>
+        <h1>Por: Samuel Carvalho Galacho</h1>
 
-            <p>Um pouco sobre a vida</p>
+        <p>Um pouco sobre a vida</p>
 
-            <h1>O que é a vida?</h1>
+        <h1>O que é a vida?</h1>
 
-            <p>
-                É a experiência de existir, de sentir, pensar e escolher.
-                É o tempo e o espaço em que construímos sentidos, relações
-                e propósito. É um mistério sem explicação, por isso é tão preciosa.
-            </p>
+        <p>
+            É a experiência de existir, de sentir, pensar e escolher.
+            É o tempo e o espaço em que construímos sentidos, relações
+            e propósito. É um mistério sem explicação, por isso é tão preciosa.
+        </p>
 
-            <button class="botao-curtir">👍 <span>0</span></button>
-            <button class="botao-nao-curtir">👎 <span>0</span></button>
+        <button class="botao-curtir">
+            👍 <span>0</span>
+        </button>
 
-        </article>
+        <button class="botao-nao-curtir">
+            👎 <span>0</span>
+        </button>
 
-
-        <!-- Início, meio e término -->
-        <article class="fred">
-
-            <h1>Por: Samuel Carvalho</h1>
-
-            <h1>Início da Vida</h1>
-
-            <h3>Crescendo depressa</h3>
-
-            <p>
-                O mundo nos empurra para correr: andar, falar, estudar,
-                ser adulto, tudo logo, logo. Achamos que crescer rápido é
-                chegar melhor lá na frente.
-
-                Mas a pressa rouba o presente: pulamos etapas, perdemos a
-                magia do caminho, e quando vemos, o tempo já passou.
-
-                Crescer não é corrida, é passo a passo. Cada um tem seu
-                próprio ritmo, não precisa ter pressa. A vida acontece no
-                caminho, não só na chegada.
-            </p>
+    </article>
 
 
-            <h3>Meio da Vida</h3>
+    <!-- INÍCIO, MEIO E TÉRMINO -->
+    <article class="fred">
 
-            <p>
-                É o momento de equilíbrio e clareza: já tem história e
-                aprendizado, não corre mais atrás de tudo, sabe o que importa.
-                Entre passado e futuro, vive o presente com mais paz.
+        <h1>Por: Samuel Carvalho</h1>
 
-                Ainda cresce, mas sem pressa, e o caminho passa a ser tão
-                valioso quanto a chegada.
-            </p>
+        <h1>Início da Vida</h1>
 
+        <h3>Crescendo depressa</h3>
 
-            <h3>Término da Vida</h3>
+        <p>
+            O mundo nos empurra para correr: andar, falar, estudar,
+            ser adulto, tudo logo, logo. Achamos que crescer rápido é
+            chegar melhor lá na frente.
+        </p>
 
-            <p>
-                É o fechamento do ciclo, a paz de quem cumpriu o caminho.
-                Olha com aceitação para tudo que viveu.
+        <p>
+            Mas a pressa rouba o presente: pulamos etapas, perdemos a
+            magia do caminho, e quando vemos, o tempo já passou.
+        </p>
 
-                A pressa acaba, e o que você foi e fez permanece,
-                não é fim, mas transformação.
-            </p>
-
-            <button class="botao-curtir">👍 <span>0</span></button>
-            <button class="botao-nao-curtir">👎 <span>0</span></button>
-
-        </article>
-
-
-        <!-- Fotos -->
-        <article class="vida">
-
-            <h1>As Fases da Vida</h1>
-
-            <p>
-                A vida passa por várias fases. Aqui podemos representar
-                essa passagem através de imagens.
-            </p>
+        <p>
+            Crescer não é corrida, é passo a passo. Cada um tem seu
+            próprio ritmo, não precisa ter pressa. A vida acontece no
+            caminho, não só na chegada.
+        </p>
 
 
-            <div class="galeria">
+        <h3>Meio da Vida</h3>
 
-                <!-- Começo -->
-                <div class="foto">
-                    <img
-                        src="https://imgs.cursosdeformacao.com.br/img_cursos/prod/img_1230x644/educacao/fases-do-desenvolvimento-infantil.jpg"
-                        alt="Bebê representando o começo da vida">
-                    <h3>Começo da vida</h3>
-                    <p>O nascimento e os primeiros momentos da vida.</p>
-                </div>
+        <p>
+            É o momento de equilíbrio e clareza: já tem história e
+            aprendizado, não corre mais atrás de tudo, sabe o que importa.
+            Entre passado e futuro, vive o presente com mais paz.
+        </p>
 
-
-                <!-- Gatinho -->
-                <div class="foto">
-                    <img
-                        src="https://img.olx.com.br/images/99/997684501626378.jpg"
-                        alt="Gatinhos filhotes">
-                    <h3>Infância</h3>
-                    <p>O crescimento e a descoberta do mundo.</p>
-                </div>
+        <p>
+            Ainda cresce, mas sem pressa, e o caminho passa a ser tão
+            valioso quanto a chegada.
+        </p>
 
 
-                <!-- Gato adulto -->
-                <div class="foto">
-                    <img
-                        src="https://davidsoraiaimobiliaria.pt/uploads/2026/02/2-porque-e-que-os-gatos-que-nunca-saem-de-casa-muitas-vezes-ficam-apaticos-e-ganham-peso.jpg"
-                        alt="Gato adulto brincando">
-                    <h3>Vida adulta</h3>
-                    <p>Uma fase de crescimento, experiências e descobertas.</p>
-                </div>
+        <h3>Término da Vida</h3>
+
+        <p>
+            É o fechamento do ciclo, a paz de quem cumpriu o caminho.
+            Olha com aceitação para tudo que viveu.
+        </p>
+
+        <p>
+            A pressa acaba, e o que você foi e fez permanece,
+            não é fim, mas transformação.
+        </p>
+
+        <button class="botao-curtir">
+            👍 <span>0</span>
+        </button>
+
+        <button class="botao-nao-curtir">
+            👎 <span>0</span>
+        </button>
+
+    </article>
 
 
-                <!-- Gato idoso -->
-                <div class="foto">
-                    <img
-                        src="https://sampi.net.br/bauru/noticias/2971807/bauru-e-regiao/2026/04/e-a-velhice-dos-gatos-do-que-eles-mais-precisam"
-                        alt="Gato idoso">
-                    <h3>Velhice</h3>
-                    <p>Uma fase de tranquilidade e lembranças.</p>
-                </div>
+    <!-- FOTOS -->
+    <article class="vida">
 
+        <h1>As Fases da Vida</h1>
 
-                <!-- Túmulo -->
-                <div class="foto">
-                    <img
-                        src="https://www.uol.com.br/nossa/noticias/redacao/2024/06/17/pai-do-espiritismo-kardec-deixou-discreta-heranca-na-cidade-natal-lyon.htm"
-                        alt="Túmulo em um cemitério">
-                    <h3>Fim do ciclo</h3>
-                    <p>Representa o encerramento da vida e o fim de um ciclo.</p>
-                </div>
+        <p>
+            A vida passa por várias fases. Aqui podemos representar
+            essa passagem através de imagens.
+        </p>
+
+        <div class="galeria">
+
+            <!-- COMEÇO -->
+            <div class="foto">
+
+                <img
+                    src="https://imgs.cursosdeformacao.com.br/img_cursos/prod/img_1230x644/educacao/fases-do-desenvolvimento-infantil.jpg"
+                    alt="Bebê representando o começo da vida">
+
+                <h3>Começo da vida</h3>
+
+                <p>
+                    O nascimento e os primeiros momentos da vida.
+                </p>
 
             </div>
 
-        </article>
 
+            <!-- INFÂNCIA -->
+            <div class="foto">
 
-        <!-- Vídeo -->
-        <article class="vida">
+                <img
+                    src="https://img.olx.com.br/images/99/997684501626378.jpg"
+                    alt="Gatinhos filhotes">
 
-            <h1>Vídeo sobre a Vida</h1>
+                <h3>Infância</h3>
 
-            <p>
-                Este vídeo explica as principais fases da vida humana,
-                desde o nascimento até a velhice.
-            </p>
-
-            <div class="video-container">
-
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/3UD13sj_kmI"
-                    title="Fases da Vida"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
+                <p>
+                    O crescimento e a descoberta do mundo.
+                </p>
 
             </div>
 
-        </article>
 
-    </main>
+            <!-- VIDA ADULTA -->
+            <div class="foto">
+
+                <img
+                    src="https://davidsoraiaimobiliaria.pt/uploads/2026/02/2-porque-e-que-os-gatos-que-nunca-saem-de-casa-muitas-vezes-ficam-apaticos-e-ganham-peso.jpg"
+                    alt="Gato adulto brincando">
+
+                <h3>Vida adulta</h3>
+
+                <p>
+                    Uma fase de crescimento, experiências e descobertas.
+                </p>
+
+            </div>
 
 
-    <!-- Rodapé -->
-    <footer>
-        <p>© 2026 - Diário de uma Vida | Samuel Carvalho Galacho</p>
-    </footer>
+            <!-- VELHICE -->
+            <div class="foto">
+
+                <img
+                    src="https://sampi.net.br/bauru/noticias/2971807/bauru-e-regiao/2026/04/e-a-velhice-dos-gatos-do-que-eles-mais-precisam"
+                    alt="Gato idoso">
+
+                <h3>Velhice</h3>
+
+                <p>
+                    Uma fase de tranquilidade e lembranças.
+                </p>
+
+            </div>
 
 
-    <script src="script.js"></script>
+            <!-- FIM DO CICLO -->
+            <div class="foto">
+
+                <img
+                    src="https://www.uol.com.br/nossa/noticias/redacao/2024/06/17/pai-do-espiritismo-kardec-deixou-discreta-heranca-na-cidade-natal-lyon.htm"
+                    alt="Túmulo em um cemitério">
+
+                <h3>Fim do ciclo</h3>
+
+                <p>
+                    Representa o encerramento da vida e o fim de um ciclo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- VÍDEO -->
+    <article class="vida">
+
+        <h1>Vídeo sobre a Vida</h1>
+
+        <p>
+            Este vídeo explica as principais fases da vida humana,
+            desde o nascimento até a velhice.
+        </p>
+
+        <div class="video-container">
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3UD13sj_kmI"
+                title="Fases da Vida"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </article>
+
+</main>
+
+
+<!-- RODAPÉ -->
+<footer>
+
+    <p>
+        © 2026 - Diário de uma Vida | Samuel Carvalho Galacho
+    </p>
+
+</footer>
+```
 
 </body>
 
