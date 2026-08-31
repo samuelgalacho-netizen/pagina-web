@@ -1,33 +1,26 @@
+```html
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Diário de uma Vida</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial;text-align:center;background:linear-gradient(135deg,#dbeafe,#fce7f3);color:#333}
-
 header{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;padding:30px}
 main{width:90%;max-width:1000px;margin:25px auto}
-.fred,.vida{background:white;margin:20px auto;padding:25px;border-radius:18px;box-shadow:0 4px 15px #aaa}
-h1,h2{color:#4f46e5;margin-bottom:12px}
-h3{color:#2563eb;margin:15px}
-p{line-height:1.6;margin-bottom:12px}
-button{padding:10px 18px;margin:5px;border:0;border-radius:20px;cursor:pointer}
-.botao-curtir{background:#22c55e;color:white}
-.botao-nao-curtir{background:#ef4444;color:white}
+article{background:white;margin:20px 0;padding:25px;border-radius:18px;box-shadow:0 4px 15px #aaa}
+h1,h2{color:#4f46e5;margin:10px}
+h3{color:#2563eb;margin:12px}
+p{line-height:1.6;margin:10px}
 .galeria{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
-.foto{width:170px}
-.foto img{width:100%;height:120px;object-fit:cover;border-radius:10px}
-.video-container{display:flex;justify-content:center}
-iframe{max-width:100%;border-radius:10px}
+.foto{width:180px}.foto img{width:100%;height:130px;object-fit:cover;border-radius:10px}
+button{padding:10px 18px;border:0;border-radius:20px;margin:5px}
+.botao-curtir{background:#22c55e;color:white}.botao-nao-curtir{background:#ef4444;color:white}
 footer{background:#1e1b4b;color:white;padding:20px}
-@media(max-width:600px){.foto{width:140px}}
 </style>
-
 </head>
 
 <body>
@@ -39,73 +32,54 @@ footer{background:#1e1b4b;color:white;padding:20px}
 
 <main>
 
-<article class="fred">
+<article>
 <h1>Por: Samuel Carvalho Galacho</h1>
 <h2>O que é a vida?</h2>
-<p>É a experiência de existir, sentir, pensar e escolher. É o tempo em que construímos sentidos, relações e propósito. Por isso, a vida é tão preciosa.</p>
+<p>É a experiência de existir, sentir, pensar e escolher. Por isso, a vida é tão preciosa.</p>
 <button class="botao-curtir">👍 0</button>
 <button class="botao-nao-curtir">👎 0</button>
 </article>
 
-<article class="fred">
+<article>
 <h1>Fases da Vida</h1>
-
-<h3>Início da Vida</h3>
-<p>Crescemos, aprendemos e descobrimos o mundo. Cada pessoa tem seu próprio ritmo.</p>
-
-<h3>Meio da Vida</h3>
-<p>Vivemos experiências, fazemos escolhas e aprendemos com o caminho.</p>
-
-<h3>Término da Vida</h3>
-<p>É o fechamento de um ciclo, deixando lembranças e experiências.</p>
-
-<button class="botao-curtir">👍 0</button> <button class="botao-nao-curtir">👎 0</button>
-
+<h3>Início</h3><p>Crescemos, aprendemos e descobrimos o mundo.</p>
+<h3>Meio</h3><p>Vivemos experiências, fazemos escolhas e aprendemos.</p>
+<h3>Fim</h3><p>É o fechamento de um ciclo, deixando lembranças.</p>
 </article>
 
-<article class="vida">
+<article>
 <h1>As Fases da Vida</h1>
-<p>A vida passa por várias fases.</p>
 
 <div class="galeria">
 
 <div class="foto">
-<img src="https://imgs.cursosdeformacao.com.br/img_cursos/prod/img_1230x644/educacao/fases-do-desenvolvimento-infantil.jpg">
-<h3>Começo</h3>
-</div>
-
-<div class="foto">
-<img src="https://img.olx.com.br/images/99/997684501626378.jpg">
+<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=400&q=80">
 <h3>Infância</h3>
 </div>
 
 <div class="foto">
-<img src="https://davidsoraiaimobiliaria.pt/uploads/2026/02/2-porque-e-que-os-gatos-que-nunca-saem-de-casa-muitas-vezes-ficam-apaticos-e-ganham-peso.jpg">
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80">
 <h3>Adulto</h3>
 </div>
 
 <div class="foto">
-<img src="https://sampi.net.br/bauru/noticias/2971807/bauru-e-regiao/2026/04/e-a-velhice-dos-gatos-do-que-eles-mais-precisam">
+<img src="https://images.unsplash.com/photo-1543333995-a78aea2eee50?auto=format&fit=crop&w=400&q=80">
 <h3>Velhice</h3>
 </div>
 
 <div class="foto">
-<img src="https://www.uol.com.br/nossa/noticias/redacao/2024/06/17/pai-do-espiritismo-kardec-deixou-discreta-heranca-na-cidade-natal-lyon.htm">
+<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80">
 <h3>Fim do ciclo</h3>
 </div>
 
 </div>
 </article>
 
-<article class="vida">
+<article>
 <h1>Vídeo sobre a Vida</h1>
-<p>Este vídeo explica as principais fases da vida humana.</p>
-
-<div class="video-container">
 <iframe width="500" height="280"
 src="https://www.youtube.com/embed/3UD13sj_kmI"
 allowfullscreen></iframe>
-</div>
 </article>
 
 </main>
