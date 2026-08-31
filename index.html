@@ -1,145 +1,127 @@
-
 <!DOCTYPE html>
+
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diário de uma Vida</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diário de uma Vida</title>
 
-    
-    <link rel="stylesheet" href="style.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:Arial;
+    text-align:center;
+    background:linear-gradient(135deg,#dbeafe,#fce7f3);
+    color:#333;
+}
+
+.site{
+    background:white;
+    max-width:800px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px #aaa;
+}
+
+h1,h2{color:#4f46e5;margin:15px}
+
+h3{color:#2563eb;margin:12px}
+
+p{
+    margin:12px;
+    line-height:1.6;
+}
+
+img{
+    width:220px;
+    height:140px;
+    object-fit:cover;
+    border-radius:12px;
+    margin:8px;
+}
+
+button{
+    background:#22c55e;
+    color:white;
+    border:0;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+iframe{
+    max-width:100%;
+    margin-top:15px;
+    border-radius:12px;
+}
+
+footer{
+    background:#1e1b4b;
+    color:white;
+    padding:15px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Diário de uma Vida</h1>
-        <p>Irei falar sobre a vida, início, meio e fim.</p>
-    </header>
+<div class="site">
 
-    <main>
+<header>
 
-        <!-- SOBRE A VIDA -->
-        <article>
-            <h1>Por: Samuel Carvalho Galacho</h1>
+<h1>Diário de uma Vida</h1>
 
-            <h2>O que é a vida?</h2>
+<p>Irei falar sobre a vida, início, meio e fim.</p>
+</header>
 
-            <p>
-                A vida é a experiência de existir, crescer, aprender,
-                sentir, fazer escolhas e criar relações.
-                Cada pessoa vive de uma maneira diferente, passando
-                por várias fases e experiências que ajudam a construir
-                sua história.
-            </p>
+<article>
 
-            <button class="botao-curtir">
-                👍 <span>0</span>
-            </button>
+<h2>O que é a vida?</h2>
 
-            <button class="botao-nao-curtir">
-                👎 <span>0</span>
-            </button>
-        </article>
+<p>
+A vida é a experiência de existir, sentir, pensar e escolher.
+Cada pessoa constrói sua própria história.
+</p>
 
+<h2>Fases da Vida</h2>
 
-        <!-- FASES DA VIDA -->
-        <article>
+<h3>Início</h3>
+<p>Crescemos, aprendemos e descobrimos o mundo.</p>
 
-            <h1>Fases da Vida</h1>
+<h3>Meio</h3>
+<p>Vivemos experiências, fazemos escolhas e aprendemos.</p>
 
-            <h3>Início</h3>
+<h3>Término</h3>
+<p>Encerramos um ciclo e deixamos lembranças.</p>
 
-            <p>
-                O início da vida é a fase em que começamos a crescer
-                e conhecer o mundo. É um período de descobertas,
-                aprendizados e desenvolvimento.
-            </p>
+<img src="https://imgs.cursosdeformacao.com.br/img_cursos/prod/img_1230x644/educacao/fases-do-desenvolvimento-infantil.jpg">
 
+<img src="https://img.olx.com.br/images/99/997684501626378.jpg">
 
-            <h3>Meio</h3>
+<h3>Comentários</h3>
+<p>Gostei muito de falar sobre as fases da vida!</p>
 
-            <p>
-                O meio da vida é uma fase de crescimento, escolhas
-                e experiências. Nessa etapa, a pessoa aprende com
-                os desafios, desenvolve suas habilidades, cria
-                relações e constrói seus objetivos.
-            </p>
+<button>👍 Like</button>
 
+<h2>Vídeo sobre a Vida</h2>
 
-            <h3>Fim</h3>
+<iframe width="500" height="280"
+src="https://www.youtube.com/embed/3UD13sj_kmI"
+allowfullscreen></iframe>
 
-            <p>
-                O fim da vida é o encerramento de um ciclo.
-                As lembranças, ensinamentos e momentos vividos
-                permanecem na memória de quem conviveu com a pessoa.
-            </p>
+</article>
 
-        </article>
+</div>
 
-
-        <!-- FOTOS -->
-        <article>
-
-            <h1>As Fases da Vida</h1>
-
-            <div class="galeria">
-
-                <div class="foto">
-                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=400&q=80">
-                    <h3>Infância</h3>
-                </div>
-
-                <div class="foto">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80">
-                    <h3>Vida adulta</h3>
-                </div>
-
-                <div class="foto">
-                    <img src="https://images.unsplash.com/photo-1543333995-a78aea2eee50?auto=format&fit=crop&w=400&q=80">
-                    <h3>Velhice</h3>
-                </div>
-
-                <div class="foto">
-                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80">
-                    <h3>Fim do ciclo</h3>
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- VÍDEO -->
-        <article>
-
-            <h1>Vídeo sobre a Vida</h1>
-
-            <div class="video-container">
-
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/3UD13sj_kmI"
-                    title="Vídeo sobre as fases da vida"
-                    allowfullscreen>
-                </iframe>
-
-            </div>
-
-        </article>
-
-    </main>
-
-
-    <footer>
-        <p>© 2026 - Diário de uma Vida | Samuel Carvalho Galacho</p>
-    </footer>
-
-
-    <!-- Ligação com o JavaScript -->
-    <script src="script.js"></script>
+<div>
+<footer>
+<p>© 2026 - Diário de uma Vida | Samuel Carvalho Galacho</p>
+</footer>
+</div>
 
 </body>
 </html>
