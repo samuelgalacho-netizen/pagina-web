@@ -12,12 +12,12 @@
 body{
     font-family:Arial;
     text-align:center;
-    background:linear-gradient(135deg,#dbeafe,#fce7f3);
+    background:linear-gradient(135deg,#0f2e56,#fce7f3);
     color:#333;
 }
 
 .site{
-    background:white;
+    background:rgb(211,153,153);
     max-width:800px;
     margin:30px auto;
     padding:25px;
@@ -26,7 +26,6 @@ body{
 }
 
 h1,h2{color:#4f46e5;margin:15px}
-
 h3{color:#2563eb;margin:12px}
 
 p{
@@ -34,12 +33,22 @@ p{
     line-height:1.6;
 }
 
-img{
+.galeria{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.foto{
     width:220px;
+    margin:8px;
+}
+
+img{
+    width:100%;
     height:140px;
     object-fit:cover;
     border-radius:12px;
-    margin:8px;
 }
 
 button{
@@ -62,7 +71,6 @@ footer{
     color:white;
     padding:15px;
 }
-
 </style>
 
 </head>
@@ -72,9 +80,7 @@ footer{
 <div class="site">
 
 <header>
-
 <h1>Diário de uma Vida</h1>
-
 <p>Irei falar sobre a vida, início, meio e fim.</p>
 </header>
 
@@ -89,18 +95,49 @@ Cada pessoa constrói sua própria história.
 
 <h2>Fases da Vida</h2>
 
-<h3>Início</h3>
-<p>Crescemos, aprendemos e descobrimos o mundo.</p>
+<h3>Infância</h3>
+<p>Fase de crescimento, aprendizado e descobertas.</p>
 
-<h3>Meio</h3>
-<p>Vivemos experiências, fazemos escolhas e aprendemos.</p>
+<h3>Adolescência</h3>
+<p>Período de mudanças, desenvolvimento e novas experiências.</p>
 
-<h3>Término</h3>
-<p>Encerramos um ciclo e deixamos lembranças.</p>
+<h3>Adulto</h3>
+<p>Fase de responsabilidades, escolhas e experiências.</p>
 
-<img src="https://imgs.cursosdeformacao.com.br/img_cursos/prod/img_1230x644/educacao/fases-do-desenvolvimento-infantil.jpg">
+<h3>Idoso</h3>
+<p>Fase de envelhecimento, sabedoria e lembranças.</p>
 
-<img src="https://img.olx.com.br/images/99/997684501626378.jpg">
+<h3>Morte</h3>
+<p>Representa o fim da vida e o encerramento de um ciclo.</p>
+
+<div class="galeria">
+
+<div class="foto">
+<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9">
+<h3>Infância</h3>
+</div>
+
+<div class="foto">
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac">
+<h3>Adolescência</h3>
+</div>
+
+<div class="foto">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
+<h3>Adulto</h3>
+</div>
+
+<div class="foto">
+<img src="https://images.unsplash.com/photo-1559234938-b60fff04894d">
+<h3>Idoso</h3>
+</div>
+
+<div class="foto">
+<img src="https://images.unsplash.com/photo-1509248961158-e54f6934749c">
+<h3>Fim da vida</h3>
+</div>
+
+</div>
 
 <h3>Comentários</h3>
 <p>Gostei muito de falar sobre as fases da vida!</p>
