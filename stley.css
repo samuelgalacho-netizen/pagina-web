@@ -1,8 +1,9 @@
-/* Página inteira */
+
+/* Página */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f1f5f9;
+    background: linear-gradient(135deg, #dbeafe, #fce7f3);
     color: #333;
 }
 
@@ -28,9 +29,8 @@ main {
 }
 
 
-/* Textos centralizados */
-.fred,
-.vida {
+/* Artigos */
+article {
     text-align: center;
     background-color: white;
     margin: 25px 0;
@@ -46,13 +46,17 @@ h1 {
     font-size: 32px;
 }
 
+h2 {
+    color: #e91e63;
+}
+
 h3 {
     color: #2196f3;
     font-size: 23px;
 }
 
 
-/* Parágrafos */
+/* Textos */
 p {
     font-size: 18px;
     line-height: 1.7;
@@ -86,14 +90,13 @@ button:hover {
 .galeria {
     display: flex;
     justify-content: center;
-    align-items: stretch;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
 
-/* Cartão de cada foto */
+/* Fotos */
 .foto {
     width: 200px;
     padding: 12px;
@@ -102,25 +105,11 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Imagens */
 .foto img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
-}
-
-
-/* Título das fotos */
-.foto h3 {
-    margin-bottom: 5px;
-}
-
-
-/* Texto das fotos */
-.foto p {
-    font-size: 15px;
 }
 
 
@@ -143,7 +132,6 @@ footer {
     padding: 25px;
     background-color: #222;
     color: white;
-    margin-top: 30px;
 }
 
 
@@ -154,13 +142,11 @@ footer {
         font-size: 30px;
     }
 
-    .fred,
-    .vida {
+    article {
         padding: 20px;
     }
 
     .foto {
         width: 90%;
     }
-
 }

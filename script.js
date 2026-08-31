@@ -1,28 +1,30 @@
-// Botão
+
+// Seleciona todos os botões
 const botoes = document.querySelectorAll("button");
 
 botoes.forEach(function(botao) {
 
-    let curtiu = false;
+    let clicado = false;
 
-// Botão clicado
-    botao.addEventListener("click", botaoClicado);
+    botao.addEventListener("click", function() {
 
-    function botaoClicado() {
+        const numero = botao.querySelector("span");
 
-        console.log("Fui clicado!");
+        if (clicado === false) {
 
-        let texto = botao.querySelector("span");
+            numero.textContent =
+                Number(numero.textContent) + 1;
 
-        if (curtiu === false) {
-
-            texto.textContent++;
-            curtiu = true;
+            clicado = true;
 
         } else {
 
-            texto.textContent--;
-            curtiu = false;
+            numero.textContent =
+                Number(numero.textContent) - 1;
+
+            clicado = false;
         }
-    }
+
+    });
+
 });
