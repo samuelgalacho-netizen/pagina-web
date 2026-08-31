@@ -1,4 +1,4 @@
-
+alert("JavaScript funcionando!");
 // Seleciona todos os botões
 const botoes = document.querySelectorAll("button");
 
@@ -28,3 +28,5 @@ botoes.forEach(function(botao) {
     });
 
 });
+
+
