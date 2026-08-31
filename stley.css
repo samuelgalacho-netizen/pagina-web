@@ -1,14 +1,166 @@
+/* Página inteira */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+}
 
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial;text-align:center;background:linear-gradient(135deg,#dbeafe,#fce7f3);color:#333}
-header{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;padding:30px}
-main{width:90%;max-width:1000px;margin:25px auto}
-article{background:white;margin:20px 0;padding:25px;border-radius:18px;box-shadow:0 4px 15px #aaa}
-h1,h2{color:#4f46e5;margin:10px}
-h3{color:#2563eb;margin:12px}
-p{line-height:1.6;margin:10px}
-.galeria{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
-.foto{width:180px}.foto img{width:100%;height:130px;object-fit:cover;border-radius:10px}
-button{padding:10px 18px;border:0;border-radius:20px;margin:5px}
-.botao-curtir{background:#22c55e;color:white}.botao-nao-curtir{background:#ef4444;color:white}
-footer{background:#1e1b4b;color:white;padding:20px}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #673ab7, #2196f3);
+    color: white;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+
+/* Conteúdo */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* Textos centralizados */
+.fred,
+.vida {
+    text-align: center;
+    background-color: white;
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Títulos */
+h1 {
+    color: #673ab7;
+    font-size: 32px;
+}
+
+h3 {
+    color: #2196f3;
+    font-size: 23px;
+}
+
+
+/* Parágrafos */
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* Botões */
+button {
+    border: none;
+    padding: 10px 18px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao-curtir {
+    background-color: #d9fdd3;
+}
+
+.botao-nao-curtir {
+    background-color: #ffdede;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+
+/* Galeria */
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+/* Cartão de cada foto */
+.foto {
+    width: 200px;
+    padding: 12px;
+    background-color: #f8fafc;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Imagens */
+.foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* Título das fotos */
+.foto h3 {
+    margin-bottom: 5px;
+}
+
+
+/* Texto das fotos */
+.foto p {
+    font-size: 15px;
+}
+
+
+/* Vídeo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+}
+
+
+/* Celular */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .fred,
+    .vida {
+        padding: 20px;
+    }
+
+    .foto {
+        width: 90%;
+    }
+
+}
